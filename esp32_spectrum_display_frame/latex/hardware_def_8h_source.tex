@@ -1,0 +1,14 @@
+\hypertarget{hardware_def_8h_source}{}\doxysection{hardware\+Def.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{//note: no need to install TFT\_eSPI on wokwi, this is just compiled on laptop code}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <TFT\_eSPI.h>}                                       \textcolor{comment}{//Graphics and font library for ST7735 driver chip search for tft\_library, designer Bodmer}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <SPI.h>}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#define SCREEN\_WIDTH    240                                 }\textcolor{comment}{//tft display width }}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#define SCREEN\_HEIGHT   135                                 }\textcolor{comment}{//tft display height }}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 TFT\_eSPI tft = TFT\_eSPI();                                  \textcolor{comment}{//Invoke library, pins defined in User\_Setup.h   }}
+
+\end{DoxyCode}

@@ -1,0 +1,30 @@
+\hypertarget{wokwi_def_8h_source}{}\doxysection{wokwi\+Def.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{//fj feb 21st 2022}}
+\DoxyCodeLine{2 \textcolor{comment}{//the display used in TTGO Tdisp board does not exists in wokwi simulator, so i need to define new display and display dimensions}}
+\DoxyCodeLine{3 \textcolor{comment}{//i also need to define same color names, since ILI9341 colors are called ILI9341\_WHITE, instead of TFT\_WHITE}}
+\DoxyCodeLine{4 \textcolor{comment}{//note: i don't need to install those libs on my laptop, since they are just compiled in wokwi}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}SPI.h"{}}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}Adafruit\_GFX.h"{}}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include "{}Adafruit\_ILI9341.h"{}}                               \textcolor{comment}{//Graphics and font library for ILI9341 driver chip}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#define TFT\_CS 15                                           }\textcolor{comment}{//connections to display}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#define TFT\_DC 2}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#define TFT\_MOSI 23}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#define TFT\_CLK 18}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#define TFT\_RST 4}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#define TFT\_MISO 19}}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#define SCREEN\_WIDTH    320                                 }\textcolor{comment}{//tft display width }}
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#define SCREEN\_HEIGHT   240                                 }\textcolor{comment}{//tft display height }}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21 \textcolor{preprocessor}{\#define TFT\_WHITE   ILI9341\_WHITE}}
+\DoxyCodeLine{22 \textcolor{preprocessor}{\#define TFT\_BLACK   ILI9341\_BLACK}}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25 Adafruit\_ILI9341 tft = Adafruit\_ILI9341(TFT\_CS, TFT\_DC, TFT\_MOSI, TFT\_CLK, TFT\_RST, TFT\_MISO);}
+
+\end{DoxyCode}
